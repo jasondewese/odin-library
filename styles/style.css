@@ -46,6 +46,7 @@ body {
 }
 
 .add-button {
+    -webkit-appearance: none;
     width: 11rem;
     height: 3rem;
     border-radius: 8px;
@@ -93,6 +94,7 @@ body {
 }
 
 .book-card button {
+    -webkit-appearance: none;
     border: none;
     border-radius: 20px;
     height: 2.5rem;
