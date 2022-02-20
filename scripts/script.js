@@ -48,7 +48,7 @@ function addBookToLibrary() {
         let newBook = new Book(bookName, bookAuthor, bookPages, bookIsRead);
         myLibrary.push(newBook);
 
-        libraryContainer.appendChild(createBookCard(bookName, bookAuthor, bookPages, bookIsRead) );
+        libraryContainer.appendChild(createBookCard(newBook) );
     }
 
     console.log(myLibrary);
@@ -66,34 +66,33 @@ function clearNewBookFields() {
 }
 
 
-/*create new html card elements to be added to DOM for each new book
+/*
+create new html card elements to be added to DOM for each new book
 return html div element that matches card styles with new book info
-title {string}
-author {string}
-pages {number}
-read {boolean}
+Book {object} - contains name, author, pages, and read properties
+return {DOM div element node}
 */
-function createBookCard(title, author, pages, read) {
+function createBookCard(Book) {
     let newCard = document.createElement('div');
     newCard.className = 'book-card';
 
     let newName = document.createElement('div');
     newName.className = "title";
-    newName.textContent = title;
+    newName.textContent = Book.name;
     newCard.appendChild(newName);
 
     let newAuthor = document.createElement('div');
     newAuthor.className = 'author';
-    newAuthor.textContent = author;
+    newAuthor.textContent = Book.author;
     newCard.appendChild(newAuthor);
 
     let newPages = document.createElement('div');
     newPages.className = 'author';
-    newPages.textContent = pages;
+    newPages.textContent = Book.pages;
     newCard.appendChild(newPages);
 
     let newStatusBtn = document.createElement('button');    
-    if (read == true) {
+    if (Book.read == true) {
         newStatusBtn.textContent = 'Read';
         newStatusBtn.className = 'read-status read';
     }
