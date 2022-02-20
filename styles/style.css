@@ -46,13 +46,14 @@ body {
 }
 
 .add-button {
-    width: 10rem;
+    width: 11rem;
     height: 3rem;
     border-radius: 8px;
     border: none;
     background-color: #fafafa;
     font-size: 1.5rem;
     box-shadow: 3px 3px 5px #cbd5e1, -3px -3px 5px #cbd5e1;
+    color: #262626;
 }
 
 .add-button:hover {
@@ -95,6 +96,7 @@ body {
     border: none;
     border-radius: 20px;
     height: 2.5rem;
+    color: #262626;
 }
 
 .remove {
