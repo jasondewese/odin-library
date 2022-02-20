@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #262626;
+}
+
 body {
     background-color: #e2e8f0;
     height: 100vh;
@@ -6,6 +16,74 @@ body {
     grid-template-rows: 100px 1fr 50px;
 }
 
+/***Header styling***/
 .header {
     background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px #cbd5e1;
 }
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+/***End header styling***/
+
+
+/***Main styling***/
+
+.main {
+    padding: 20px 15% 20px 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-button-wrapper {
+    padding-bottom: 20px;
+}
+
+.add-button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #fafafa;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px 5px #cbd5e1, -3px -3px 5px #cbd5e1;
+}
+
+.add-button:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+/***End main styling***/
+
+
+/***Footer styling***/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.odin-link {
+    padding: 0 2rem;
+}
+
+.git-logo {
+    width: 40px;
+}
+
+.git-logo:hover {
+    cursor: pointer;
+}
+/***End footer styling***/
