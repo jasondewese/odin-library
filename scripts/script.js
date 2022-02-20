@@ -26,9 +26,11 @@ submitBookBtn.addEventListener('click', addBookToLibrary);
 function changeReadStatus() {
     if (this.className == 'read-status not-read') {
         this.className = 'read-status read';
+        this.textContent = 'Read';
     }
     else {
         this.className = 'read-status not-read';
+        this.textContent = 'Not Read';
     }
 }
 
