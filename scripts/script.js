@@ -88,7 +88,7 @@ function createBookCard(Book) {
 
     let newPages = document.createElement('div');
     newPages.className = 'author';
-    newPages.textContent = Book.pages;
+    newPages.textContent = Book.pages + ' pages';
     newCard.appendChild(newPages);
 
     let newStatusBtn = document.createElement('button');    
@@ -114,6 +114,8 @@ function createBookCard(Book) {
 
 function displayLibrary() {
     //show all books in updated library
+    //currently this is taken care of by addBookToLibrary
+    //might need in future if give user ability to clear and/or import lists of books
 }
 
 /*
