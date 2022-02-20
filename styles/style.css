@@ -70,6 +70,7 @@ body {
 
 .book-card {
     max-height: 290px;
+    max-width: 340px;
     background-color: #fafafa;
     border-radius: 20px;
     padding: 25px;
@@ -144,7 +145,7 @@ body {
 
 /***New Book Menu Styling***/
 
-.opaque {
+.gray-out {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -153,7 +154,8 @@ body {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.3);
     
-    display: block;
+    /*do not show by default. script.js changes to 'block' when should be visible*/
+    display: none;
     
 }
 .new-book-wrapper {
