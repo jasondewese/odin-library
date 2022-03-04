@@ -143,5 +143,4 @@ class Book {
         this.read = read;
     }
 
-    
 }
