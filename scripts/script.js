@@ -125,9 +125,23 @@ function displayLibrary() {
     pages {number} - amount of pages in book
     read {boolean} - true if book already read, false if not read yet
 */
+/*
 function Book(name, author, pages, read) {
     this.name = name;
     this.author = author;
     this.pages = pages;
     this.read = read;
+}
+
+*/
+
+class Book {
+    constructor(name, author, pages, read) {
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    
 }
