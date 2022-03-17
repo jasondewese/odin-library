@@ -231,5 +231,12 @@ form button:hover {
     cursor: pointer;
 }
 
+form input:invalid {
+    border: 1px solid red;
+}
+
+form input:valid {
+    border: 1px solid green;
+}
 
 /***End new book styling***/
